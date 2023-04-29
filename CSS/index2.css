@@ -1,0 +1,215 @@
+html {
+    background-color: #fff;
+}
+
+body {
+    width: 502px;
+    height: 1584px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "MicrosoftYahei", STXihei, hei;
+    color: #ffffff;
+    background: #141C32;
+    /* x轴（）横向隐藏滚动条 */
+    overflow-x: hidden;
+    /* 点击高亮部分（比如链接）变透明 */
+    -webkit-tap-highlight-color: transparent;
+}
+
+.nav {
+    display: flex;
+    padding: 14px 35px;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.nav-lift {
+    display: flex;
+
+}
+
+.nav-lift-re {
+    display: block;
+    width: 86px;
+    height: 37px;
+    border-radius: 5px 5px 5px 5px;
+    opacity: 1;
+    text-align: center;
+}
+
+.nav-lift-duan {
+    display: block;
+    margin-left: 35px;
+    width: 86px;
+    height: 37px;
+    border-radius: 5px 5px 5px 5px;
+    opacity: 1;
+    text-align: center;
+}
+.nav-lift span:hover {
+    background: linear-gradient(180deg, #864EFD 0%, rgba(134, 78, 253, 0.74) 98%);
+}
+.nav i {
+    display: block;
+    margin-right: 22px;
+    font-size: 25px;
+
+}
+
+.subNav {
+    width: 500px;
+    height: 50px;
+    background: #252D41;
+    border-radius: 6px 6px 6px 6px;
+    opacity: 1;
+    margin-top: 24px;
+}
+
+
+.subNav ul {
+    display: flex;
+    justify-self: center;
+}
+
+.subNav ul li {
+    padding-left: 28px;
+    flex: 1;
+
+}
+
+.subNav ul li a {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #ffffff;
+}
+
+.subNav ul li a:hover {
+    background: linear-gradient(180deg, #9062F4 0%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.main {
+
+    width: 502px;
+    height: 663px;
+    border-radius: 0px 0px 0px 0px;
+    opacity: 1;
+    margin-bottom: 64px;
+
+
+}
+
+.main img {
+    width: 100%;
+}
+
+.main-txt {
+    position: relative;
+    text-align: left;
+    vertical-align: text-top
+}
+
+.main-txt-icon {
+    position: absolute;
+    top: -99px;
+    left: 21px;
+    font-size: 24px;
+}
+
+.main-txt-icon span:last-of-type {
+    padding-left: 31px;
+}
+
+.main-txt-icon i {
+    font-size: 24px;
+}
+
+.content {
+    position: absolute;
+    top: -62px;
+    left: 21px;
+    font-size: 18px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.joinus {
+    position: relative;
+    position: absolute;
+    bottom:170px ;
+    right: 31px;
+    width: 68px;
+height: 66px;
+border-radius: 50%;
+background: linear-gradient(180deg, #804BF2 0%, #956CF9 100%);
+box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.28);
+opacity: 1;
+}
+.joinus >span {
+    display: block;
+font-size: 24px;
+font-weight: 400;
+line-height: 60px;
+text-align: center;
+}
+.joinus > p {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    width: 502px;
+    height: 71px;
+    opacity: 1;
+    background-color: #252D41;
+}
+
+.footer-menu {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-menu li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.footer-menu li a i {
+    font-size: 20px;
+}
+
+.footer-menu li a span {
+    font-size: 18px;
+}
+
+.footer-menu li a span:hover {
+    color: #824CF6;
+}
+
+.footer-menu .footer-menu-content i {
+    font-size: 40px;
+}

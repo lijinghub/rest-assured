@@ -1,0 +1,251 @@
+html {
+    background-color: #fff;
+}
+
+body {
+    width: 500px;
+    height: 1062px;
+    background: #141C32;
+    border-radius: 1px 1px 1px 1px;
+    opacity: 1;
+    border: 1px solid #141C32;
+    margin: 0 auto;
+}
+
+.search {
+    display: flex;
+    position: relative;
+    width: 446px;
+    height: 50px;
+    background: #3F465E;
+    opacity: 1;
+    margin: 15px 26px;
+    border-radius: 10px;
+}
+
+.search input {
+    width: 446px;
+    height: 50px;
+    color: #B0B0B0;
+    font-size: 12px;
+    border: 0;
+    outline: none;
+    background: 0;
+}
+
+.search i {
+    position: absolute;
+    top: 8px;
+    right: 17px;
+    font-size: 23px;
+    color: #767676;
+}
+
+.honor {
+    width: 430px;
+    height: 350px;
+    margin: 34px 33px;
+    border: 5px solid;
+    border-image: linear-gradient(to right, #854efc88, #00ff738f) 5;
+}
+
+.honor ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex: 20%;
+}
+
+
+.honor ul li {
+    width: 87px;
+    height: 92px;
+    background: rgba(255, 40, 40, 0.8);
+    box-shadow: inset 0px 4px 10px 0px rgba(0, 0, 0, 0.302);
+    border-radius: 0px 0px 8px 8px;
+    opacity: 1;
+    border: 0px solid #000000;
+    margin-top: 15px;
+
+}
+
+.honor ul li span {
+    display: block;
+    margin-left: 7px;
+    padding-top: 5px;
+    line-height: 18px;
+    width: 72px;
+    height: 74px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.honor ul li:nth-child(2) {
+    background: rgba(255, 250, 158, 0.8);
+}
+
+.honor ul li:nth-child(3) {
+    background: rgba(207, 255, 158, 0.8);
+}
+
+.honor ul li:nth-child(4) {
+    background: rgba(206, 168, 240, 0.8);
+}
+
+.honor ul li:nth-child(5) {
+    background: rgba(255, 208, 158, 0.8);
+}
+
+.honor ul li:nth-child(6) {
+    background: rgba(158, 255, 194, 0.8);
+}
+
+.honor ul li:nth-child(7) {
+    background: rgba(158,208,255,0.8);
+}
+
+.honor ul li:nth-child(8) {
+    background: rgba(244,0,195,0.8);
+}
+
+.honor ul li:nth-child(9) {
+    background: rgba(255,221,0,0.8);
+}
+.honor ul li:nth-child(10) {
+    background: rgba(0,100,250,0.8);
+}
+
+.honor ul li:nth-child(11) {
+    background: rgba(162,0,255,0.8);
+}
+.honor ul li:nth-child(12) {
+    background: rgba(3,255,125,0.8);
+}
+.shop {
+    width: 451px;
+    height: 146px;
+    background: #1E253A;
+    border-radius: 4px 4px 4px 4px;
+    opacity: 1;
+    margin: 0 auto;
+    margin-bottom: 11px;
+}
+
+.shop ul {
+    width: 440px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5px;
+}
+
+.shop li {
+    margin-top: 12px;
+    margin-left: 10px;
+    padding: 2px 12px;
+    line-height: 31px;
+    text-align: center;
+    font-size: 14px;
+    background: #3F465E;
+    border-radius: 8px 8px 8px 8px;
+    opacity: 1;
+}
+.shop li:hover {
+    background: #844DF9;
+    color: #fff;
+}
+
+.shop-nav {
+    margin: 14px 18px;
+}
+
+.shop-nav span {
+    font-size: 14px;
+    color: #fff;
+    padding-right: 54px;
+    padding-top: 18px;
+}
+
+.service-main {
+    display: flex;
+    margin-top: 33px;
+}
+
+.service-main img {
+    width: 93px;
+    height: 80px;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.main-above {
+    padding-left: 8px;
+}
+
+.main-above p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.main-above span {
+    display: block;
+    padding-top: 12px;
+    line-height: 20px;
+    color: #B8B8B8;
+    font-size: 14px;
+}
+
+.service-main-btn {
+    display: block;
+    margin-left: 37px;
+    margin-top: 25px;
+    width: 108px;
+    height: 36px;
+    background: #844DF9;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 18px;
+    color: #fff;
+    opacity: 1;
+}
+
+.footer {
+    width: 500px;
+    height: 71px;
+    background-color: #252D41;
+    opacity: 1;
+    margin-top: 361px;
+
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 12px;
+
+}
+
+.footer-menu li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.footer-menu li a i {
+    font-size: 20px;
+}
+
+.footer-menu li a span {
+    font-size: 18px;
+}
+
+.footer-menu li a span:hover {
+    color: #824CF6;
+}
+
+.footer-menu .footer-menu-content i {
+    font-size: 40px;
+}

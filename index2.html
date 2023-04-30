@@ -13,8 +13,9 @@
 <body>
     <div class="nav">
         <div class="nav-lift">
-            <span class="nav-lift-re" >热点</span>
-            <span class="nav-lift-duan">短视频</span>
+            <a href="index.html"> <span class="nav-lift-re" >热点</span></a>
+           <a href="index2.html"> <span class="nav-lift-duan" style="background: linear-gradient(180deg, #864EFD 0%, rgba(134, 78, 253, 0.74) 98%); color: #ffffff;">短视频</span></a>
+           
         </div>
         <i class="iconfont icon-sousuo"></i>
     </div>
@@ -45,9 +46,9 @@
                 </span>
             </div>
             <span class="content">夏天的风，吹走你的忧伤；夏天的雨，冲走你的烦恼；夏天的冰淇淋，让你心情美妙；夏天的凉席，给你一整年的幸福！</span>
-            <div class="joinus">
+            <div class="joinus" id="joinusID">
                 <span>关注</span>
-                <p class="iconfont icon-a-tianjiaguanzhuguanzhu"></p>
+                <p class="iconfont icon-a-tianjiaguanzhuguanzhu" ></p>
             </div>
 
         </div>
@@ -74,21 +75,17 @@
         </div>
     </div>
 
-
-
-
-
  
         <div class="footer">
             <ul class="footer-menu">
                 <li>
-                    <a href="#">
+                    <a href="index2.html">
                         <i class="iconfont icon-shouye"></i>
-                        <span>首页</span>
+                        <span style=" color: #824CF6;">首页</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="qiang.html">
                         <i class="iconfont icon-fenlei"></i>
                         <span>帮助墙</span>
                     </a>
@@ -100,13 +97,13 @@
                     </a>
                 </li>
                 <li >
-                    <a href="#">
+                    <a href="message.html">
                         <i class="iconfont icon-xinxi"></i>
                         <span>消息</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="my.html">
                         <i class="iconfont icon-wode
                         "></i>
                         <span>我的</span>
@@ -116,12 +113,31 @@
         </div>
 
 
-    
-
-
-
-
     </div>
+<script>
+    //获取相关的元素节点
+    //给相关的节点做点击事件
+    let jo = document.querySelector("#joinusID");
+    let jop = jo.getElementsByTagName('p');
+    // console.log(jop);
+    let flag = 0;
+    jo.onclick = function () {
+        if (flag == 0) {
+            this.querySelector('span').innerText='已关注';
+        this.querySelector('p').className='xin'
+        this.querySelector('p').style="background: url(img/hongxin.png) no-repeat;margin-top:5px";
+        flag = 1;
+        }else {
+            this.querySelector('span').innerText='关注';
+        this.querySelector('p').className='iconfont icon-a-tianjiaguanzhuguanzhu';
+        this.querySelector('p').style=" ";
+        flag = 0;
+    }
+
+        
+    
+    }
+</script>
 
 
 

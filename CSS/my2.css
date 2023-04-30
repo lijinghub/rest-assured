@@ -1,3 +1,6 @@
+html {
+    background-color: #fff;
+}
 body {
     width: 500px;
     height: 1064px;
@@ -114,7 +117,7 @@ margin-top: 23px;
     height: 71px;
     background-color:#252D41;
     opacity: 1;
-    margin-top: 353px;
+    margin-top: 299px;
     
 }
 

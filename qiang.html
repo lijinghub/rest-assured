@@ -58,7 +58,7 @@
         </ul>
     </div>
     <div class="shop">
-        <ul>
+        <ul id='shopID'>
             <li>全部</li>
             <li>找东西</li>
             <li>匿名举报</li>
@@ -72,12 +72,12 @@
             <li>跑腿</li>
             
         </ul>
-        <div class="shop-nav">
+        <div class="shop-nav" id="nav">
             <span>按地区 <i class="iconfont icon-xiajiantou"></i></span>
             <span>按时间 <i class="iconfont icon-xiajiantou"></i></span>
         </div>
         
-         <div class="service">
+         <!-- <div class="service">
             <div class="service-main">
                 <img src="img/main-above.jpeg" alt="">
                 <div class="main-above">
@@ -102,20 +102,23 @@
                 </div>
                 <span class="service-main-btn">帮助他</span>
             </div>
-         </div>
+         </div> -->
+
+<div class="service"> </div>
+
     </div>
     <div class="footer">
         <ul class="footer-menu">
             <li>
-                <a href="#">
+                <a href="index.html">
                     <i class="iconfont icon-shouye"></i>
                     <span>首页</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="qiang.html">
                     <i class="iconfont icon-fenlei"></i>
-                    <span>帮助墙</span>
+                    <span style="color: #824CF6;">帮助墙</span>
                 </a>
             </li>
             <li class="footer-menu-content">
@@ -125,19 +128,125 @@
                 </a>
             </li>
             <li >
-                <a href="#">
+                <a href="message.html">
                     <i class="iconfont icon-xinxi"></i>
                     <span>消息</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="my2.html">
                     <i class="iconfont icon-wode
                     "></i>
                     <span>我的</span>
                 </a>
             </li>
     </div>
+
+    <script>
+        // 1、获取元素列表
+    // 2、获取当前点击的列表再变色
+    var shop = document.querySelector('#shopID').querySelectorAll('li');
+    shop[0].style.background ='#844DF9';
+    shop[0].style.color = '#fff';
+    // var bth = document.querySelectorAll('li')
+    for (var i=0; i<shop.length; i++) {
+
+        shop[i].onclick = function () {
+            for (var i=0; i<shop.length; i++) {
+                shop[i].style.background ='';
+                shop[i].style.color = '';
+            }
+            this.style.background ='#844DF9';
+            this.style.color = '#fff';
+        }
+    }
+
+    let arr = [{
+        img:'https://img2.baidu.com/it/u=2487253038,553236112&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667',
+        text:'本人今天2022.4.5号早上在北京路掉了一克拉钻剑1',
+        times:'2022.05.10——2022.05.13',
+        index:0,
+    },
+    {
+        img:'https://img2.baidu.com/it/u=2487253038,553236112&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667',
+        text:'本人今天2022.4.5号早上在北京路掉了一克拉钻剑2',
+        times:'2022.05.10——2022.05.13',
+        index:1,
+
+    },
+    {
+        img:'https://img2.baidu.com/it/u=2487253038,553236112&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667',
+        text:'本人今天2022.4.5号早上在北京路掉了一克拉钻剑3',
+        times:'2022.05.10——2022.05.13',
+        index:2,
+    }
+]
+let service = document.querySelector('.service');
+
+// += 动态新增数据
+// ``模板字符串 保存所有节点
+// ${} 在模板字符串中更新数据
+
+function fun(e){
+    for (let b=0; b<arr.length; b++){
+
+service.innerHTML+= `
+<div class="service-main">
+            <img src="${arr[b].img}" alt="">
+            <div class="main-above">
+                    <p>${arr[b].text}</p>
+                    <span>${arr[b].times}</span>
+            </div>
+            <span class="service-main-btn">帮助他</span>
+        </div>
+`
+}
+}
+fun()
+
+
+    var nav = document.querySelector('#nav').querySelectorAll('span');
+    let isarrow = false;
+    for (var j=0; j<nav.length; j++) {
+        nav[j].onclick = function(){
+            isarrow =!isarrow;
+            // 判断isarrow为trun 就升序   isrrow 为false 就降序
+            if(isarrow){
+                this.querySelector('i').className = 'iconfont icon-shangjiantou';
+            arr.sort((aa, bb) => aa.index < bb.index ? 1 : aa.index > bb.index ? -1 : 0)
+                service.innerHTML=''
+                fun()
+            } else {
+                this.querySelector('i').className = 'iconfont icon-xiajiantou';
+              arr.sort((aa, bb) => aa.index > bb.index ? 1 : aa.index < bb.index ? -1 : 0)
+                service.innerHTML=''
+                fun()
+            }
+        }
+    }
+
+
+
+
+
+
+// let temp;
+// for (let c = arr.length; c > 0; c--) {
+//     console.log(arr);
+//             for (let d = 0; d < c - 1; d++) {
+//                 if (arr[d] >arr[d + 1]) {
+//                     //>升序 <降序
+ 
+//                     temp = arr[d];
+//                     arr[d] = arr[d + 1];
+//                     arr[d + 1] = temp;
+//                 }
+//             }
+//         }
+
+
+
+    </script>
 
 </body>
 

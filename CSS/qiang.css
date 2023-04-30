@@ -149,10 +149,10 @@ body {
     border-radius: 8px 8px 8px 8px;
     opacity: 1;
 }
-.shop li:hover {
+/* .shop li:hover {
     background: #844DF9;
     color: #fff;
-}
+} */
 
 .shop-nav {
     margin: 14px 18px;

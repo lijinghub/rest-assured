@@ -13,8 +13,9 @@
 <body>
     <div class="nav">
         <div class="nav-lift">
-            <span class="nav-lift-re" >热点</span>
-            <span class="nav-lift-duan">短视频</span>
+            <a href="index.html"> <span class="nav-lift-re"  style="background: linear-gradient(180deg, #864EFD 0%, rgba(134, 78, 253, 0.74) 98%); color: #ffffff;">热点</span></a>
+            <a href="index2.html"> <span class="nav-lift-duan">短视频</span></a>
+           
         </div>
         <i class="iconfont icon-sousuo"></i>
     </div>
@@ -52,7 +53,7 @@
             <i class="iconfont icon-jinrujiantou"></i>
         </div>
 
-        <div class="partner-blogger">
+        <div class="partner-blogger" id="partnerID">
             <div class="partner-blogger-one">
                 <span class="partner-blogger-one-o">1</span>
                 <img src="img/profile.jpg" alt="">
@@ -110,13 +111,13 @@
         <div class="footer">
             <ul class="footer-menu">
                 <li>
-                    <a href="#">
+                    <a href="index.html">
                         <i class="iconfont icon-shouye"></i>
-                        <span>首页</span>
+                        <span style=" color: #824CF6;">首页</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="qiang.html">
                         <i class="iconfont icon-fenlei"></i>
                         <span>帮助墙</span>
                     </a>
@@ -128,13 +129,13 @@
                     </a>
                 </li>
                 <li >
-                    <a href="#">
+                    <a href="message.html">
                         <i class="iconfont icon-xinxi"></i>
                         <span>消息</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="my2.html">
                         <i class="iconfont icon-wode
                         "></i>
                         <span>我的</span>
@@ -143,7 +144,30 @@
         </div>
     </div>
 
+<script>
+    var partner = document.querySelectorAll('#partnerID .partner-blogger-one');
+    var btn = document.querySelectorAll('.partner-blogger-down');
+    // console.log(btn);
+    for (var i=0; i<partner.length; i++) {
+        console.log(btn[i]);
+        // let div=partner[i];
+        
+        btn[i].onclick = function (){
+            console.log(this,'出发了');
+            // btn[i].innerHTML = '已关注';
+            this.innerText = '已关注';
+            this.style.background = 'grey';
+            setTimeout(function(){
+                alert('关注成功！');
+            },100)
 
+           
+        }
+
+  
+    }
+    
+</script>
 
 </body>
 </html>
